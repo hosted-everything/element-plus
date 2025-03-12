@@ -1,8 +1,13 @@
 <template>
-  <el-input v-model="filterText" placeholder="Filter keyword" />
+  <el-input
+    v-model="filterText"
+    class="w-60 mb-2"
+    placeholder="Filter keyword"
+  />
 
   <el-tree
     ref="treeRef"
+    style="max-width: 600px"
     class="filter-tree"
     :data="data"
     :props="defaultProps"
